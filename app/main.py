@@ -1,5 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 import uvicorn
 from app.routers import api
 
@@ -21,9 +22,13 @@ app.add_middleware(
 # Include routers
 app.include_router(api.router)
 
+# Mount static files (for dashboard)
+app.mount("/dashboard", StaticFiles(directory="app/static", html=True), name="dashboard")
+
 @app.get("/")
 async def root():
-    return {"message": "Welcome to the Unified Threat Detection and Response System API"}
+    return {"message": "Welcome to the Unified Threat Detection and Response System API", 
+            "dashboard_url": "/dashboard"}
 
 if __name__ == "__main__":
     uvicorn.run("app.main:app", host="0.0.0.0", port=8000, reload=True)

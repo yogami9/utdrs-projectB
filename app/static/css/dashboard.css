@@ -1,0 +1,58 @@
+body {
+    background-color: #f5f5f5;
+}
+
+.card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    margin-bottom: 1.5rem;
+}
+
+.card-header {
+    font-weight: 600;
+    background-color: #f8f9fa;
+}
+
+#riskLevelBadge.badge.low {
+    background-color: #28a745;
+}
+
+#riskLevelBadge.badge.medium {
+    background-color: #ffc107;
+}
+
+#riskLevelBadge.badge.high {
+    background-color: #dc3545;
+}
+
+#loadingSpinner {
+    margin: 50px auto;
+}
+
+#rawJson {
+    max-height: 500px;
+    overflow-y: auto;
+    font-family: monospace;
+    font-size: 0.85rem;
+}
+
+.table td, .table th {
+    padding: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.table-responsive {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.nav-tabs .nav-link {
+    color: #495057;
+}
+
+.nav-tabs .nav-link.active {
+    font-weight: 600;
+}
+
+canvas {
+    max-height: 300px;
+}

@@ -14,6 +14,7 @@ The UTDRS is designed to ingest various types of security data and identify both
 - **Email & Phishing Detection**: Spot malicious emails and attachments
 - **Threat Intelligence Integration**: Utilize known threat indicators
 - **Anomalous Behavior Detection**: Find insider threats and unusual activity
+- **Interactive Dashboard**: Visualize and explore detected threats
 
 ## Getting Started
 
@@ -21,6 +22,7 @@ The UTDRS is designed to ingest various types of security data and identify both
 
 - Docker and Docker Compose
 - Git
+- Python 3.9+
 
 ### Installation and Setup
 
@@ -38,6 +40,39 @@ The UTDRS is designed to ingest various types of security data and identify both
 3. Access the API at http://localhost:8000
 
 4. Access the API documentation at http://localhost:8000/docs
+
+5. Access the dashboard at http://localhost:8000/dashboard
+
+### Running the Dashboard Locally
+
+You can also run the dashboard locally without Docker:
+
+1. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. Run the dashboard:
+   ```bash
+   python dashboard.py
+   ```
+
+3. The dashboard will automatically open in your default web browser
+
+## Dashboard Usage
+
+The UTDRS Dashboard provides an interactive interface to:
+
+1. Upload and analyze security data files
+2. Load sample data for testing and demonstration
+3. View detected anomalies and known threats
+4. Visualize the distribution of security issues
+5. Track the overall risk level of your system
+
+### Dashboard Screenshots
+
+![Dashboard Main View](docs/images/dashboard-main.png)
+![Dashboard Analysis Results](docs/images/dashboard-results.png)
 
 ## API Usage
 
@@ -82,29 +117,27 @@ This project is configured for easy deployment on Render:
 
 ```
 utdrs-project/
-├── app/
-│   ├── models/
-│   │   └── detection.py
-│   ├── routers/
-│   │   └── api.py
-│   ├── utils/
-│   │   └── helpers.py
-│   └── main.py
 ├── data/
 │   └── sample_*.csv files
 ├── tests/
 │   └── test_detection.py
+├── dashboard.py              # Dashboard runner script
 ├── Dockerfile
 ├── docker-compose.yml
 ├── requirements.txt
 ├── render.yaml
-└── README.md
-```
-
-## License
-
-MIT License
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
+└── README.md app/
+│   ├── models/
+│   │   └── detection.py
+│   ├── routers/
+│   │   └── api.py
+│   ├── static/                  # Dashboard files
+│   │   ├── css/
+│   │   │   └── dashboard.css
+│   │   ├── js/
+│   │   │   └── dashboard.js
+│   │   └── index.html
+│   ├── utils/
+│   │   └── helpers.py
+│   └── main.py
+├──
