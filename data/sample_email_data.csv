@@ -1,0 +1,3 @@
+timestamp,sender,receiver,subject,email_text,links_in_email,file_name,file_type,spf_status,dkim_status,dmarc_status
+2025-04-01T12:00:00,ceo@company.com,employee@company.com,Important Request,Please follow this link,https://maliciouslink.com,report.exe,exe,pass,fail,fail
+2025-04-01T12:01:00,hr@company.com,employee@company.com,Salary Info,Click the link to view your salary details,https://phishinglink.com,report.pdf,PDF,fail,pass,pass

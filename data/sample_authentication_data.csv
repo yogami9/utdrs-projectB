@@ -1,0 +1,6 @@
+timestamp,user_id,login_status,geolocation,device_id,device_type,auth_method
+2025-04-01T12:00:00,john,failed,192.168.1.100,device_01,smartphone,password
+2025-04-01T12:01:00,john,failed,192.168.1.101,device_01,smartphone,password
+2025-04-01T12:02:00,john,success,192.168.1.102,device_01,smartphone,multi-factor
+2025-04-01T12:03:00,jane,failed,192.168.2.150,device_02,laptop,password
+2025-04-01T12:04:00,jane,success,192.168.2.160,device_02,laptop,password

@@ -1,0 +1,4 @@
+timestamp,ip_address,domain,signature_id,hash,url,email_pattern
+2025-04-01T12:00:00,192.168.0.10,www.maliciousdomain.com,MAL001,abc12345,https://maliciouslink.com,*.exe
+2025-04-01T12:01:00,192.168.0.11,www.phishingdomain.com,MAL002,xyz67890,https://phishinglink.com,admin@company.com
+2025-04-01T12:02:00,192.168.0.12,www.knownexploitkit.com,MAL003,def54321,https://exploitkit.com,

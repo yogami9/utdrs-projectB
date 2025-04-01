@@ -1,0 +1,6 @@
+timestamp,event_id,event_type,user,process_name,cpu_usage,memory_usage,file_name,modification_type
+2025-04-01T12:00:00,1001,login,john,chrome.exe,10%,200MB,,
+2025-04-01T12:01:00,1002,command,john,notepad.exe,5%,100MB,,
+2025-04-01T12:02:00,1003,modification,john,,,C:\Users\John\Documents\important_file.txt,modified
+2025-04-01T12:03:00,1004,login,john,powershell.exe,2%,50MB,,
+2025-04-01T12:05:00,1005,process_start,john,malware.exe,30%,500MB,,

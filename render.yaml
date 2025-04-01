@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: utdrs-api
+    env: docker
+    repo: https://github.com/yourusername/utdrs-project.git  # Replace with your repository URL
+    region: oregon  # Choose your region
+    plan: starter  # Choose your plan
+    branch: main
+    healthCheckPath: /
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.9.0
