@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Global variables
-    const apiBaseUrl = 'http://localhost:8000/api';
+    const apiBaseUrl = '/api';
     let threatsChart = null;
     
     // DOM elements
